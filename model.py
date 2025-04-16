@@ -3,6 +3,7 @@ import torch.nn as nn
 from torch_geometric.data import Data
 from torch_geometric.nn import GCNConv
 
+
 device = torch.device('cuda')
 
 def neighList_to_weighted_edgelist(adj):

@@ -255,7 +255,8 @@ def add_edges(sim_mat, adj, mean_sim):
                 top_k = torch.topk(sim_mat[i, candidates], k, largest=False).indices
                 adj[i, candidates[top_k]] = 1
 
-    
+
+# multiplie two tensors in chunks to avoid memory issues.
 def chunked_multiply(tensor1, tensor2, chunk_size=1000):
     if tensor2.is_sparse:
         tensor2 = tensor2.to_dense()

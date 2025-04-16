@@ -157,6 +157,7 @@ def train(features, raw_adj, label):
         print('total_time:{:.4f}'.format(end - start))
 
 
+# execute
 if __name__ == "__main__":
     device = torch.device('cuda')
 
