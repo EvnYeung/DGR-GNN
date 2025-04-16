@@ -14,11 +14,6 @@ This repository provides the implementation of the GNN-based fraud detector **DG
 
 ## Model Training
 
-Move to DGR/：
-```python
-cd DGR/
-```
-
 Train and test the model:
 
 ```python
